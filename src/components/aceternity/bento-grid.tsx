@@ -1,10 +1,7 @@
 'use client'
 
 import { useState, useEffect } from "react";
-import { IoCopyOutline } from "react-icons/io5";
-// import Lottie from 'react-lottie'
-
-const Lottie = dynamic(() => import('react-lottie'), { ssr: false })
+import { IoCopyOutline } from "react-icons/io5"
 
 import { cn } from "@/lib/utils";
 import MagicButton from "../magic-button";
@@ -172,7 +169,6 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
               <MagicButton
